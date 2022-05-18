@@ -16,6 +16,8 @@
 
  /**
   * Ejecuta el siguiente código e intenta averiguar que está sucediendo. CONTESTA A LA PREGUNTA: ¿Porque el úñtimo mensaje dice "Pez siguiente: undefined?"
+  * 
+  * Porque al poner en el for, como condición que "i <= muchos_peces.length" la última iteración da como resultado i==4, peo la última posición es 3, ya que la primera es 0
   */
 
 let muchos_peces = ["Dory", "Nemo", "Shipho", "Estrella"]
