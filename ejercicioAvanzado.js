@@ -1,6 +1,6 @@
 // NOTA: Se recomienda hacer estos ejercicios solo si hay conocimientos previos de programación
 
-let numeros = [1, 20, -10, 3, 0, 30, - 1, 3, - 7];
+let numeros = [1, 20, -10, 3, 0, 30, -1, 3, -7];
 
 //console.log(numeros[0]);  // posicióm i-esima del array
 
@@ -30,8 +30,8 @@ let positivos = numeros.filter((x) => {
 // La expresión boleana tiene que estar en una línia y no puede haber instruccion adicionales ni {}
 let positivosES6 = numeros.filter(x => x > 0);
 
-// console.log(positivos);
-// console.log(positivosES6);
+ console.log(positivos);
+ console.log(positivosES6);
 
 
 //map.https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -43,14 +43,14 @@ let saludos = nombres.map((nombre) => {
     return 'Hola ' + nombre;
 })
 
-//  console.log(nombres);
-// console.log(saludos);
+  console.log(nombres);
+ console.log(saludos);
 
 let caracteresCadaNombre = nombres.map((nombre) => {
     return nombre.length;
 })
 
-// console.log(caracteresCadaNombre)
+ console.log(caracteresCadaNombre)
 
 // sort
 // Queremos ordenar el array de menor a mayor número 
@@ -66,7 +66,7 @@ numeros.sort((a, b) => {
     return 0;
 
 });
-//console.log(numeros)
+console.log(numeros)
 
 // voy a ordenar los nombres por tamaño del nombre. Quiero ordenarlo
 // de nombres más cortos primeros, y lo más largos, al final del array
@@ -87,7 +87,7 @@ nombres.sort((a, b) => {
     return 0;
 })
 
-// console.log(nombres);
+ console.log(nombres);
 
 let usuarios = [{
     nombre: 'Pepe',
