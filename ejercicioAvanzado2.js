@@ -1,7 +1,7 @@
 const usuarios = [{
     username: 'omiras',
     password: '****',
-    subscribed: true // indica si estamos suscritos a la newletter
+    subscribed: true // indica si estamos suscritos a la newsletter
 }, {
     username: 'vcollazos',
     password: '****',
