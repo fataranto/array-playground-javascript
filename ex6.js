@@ -5,10 +5,13 @@
 function existePez(listaPeces, pezBuscado) {
     let pezEncontrado = false; // Empezamos a buscar en el array. De momento, no hemos encontrado el pez;
     let i = 0; // quiero empezar a buscar por el primer elemento del array, es decir, por listaPeces[0]
+    //console.log(listaPeces);
+    while (!pezEncontrado && i < listaPeces.length) { //listaPeces.length - 1 no estaba permitiendo evaluar la última posición que es donde estaba "Estrella"
 
-    while (!pezEncontrado && i < listapeces.length - 1) {
         // PISTA ERROR 2: usa console.log dentro de este bucle para ver como cambia el valor de las variables 'i' y 'pezEncontrado'.
+        //console.log(pezEncontrado, i);
         pezEncontrado = (listaPeces[i] == pezBuscado);
+        //console.log(pezEncontrado);
         i++;
     }
 
