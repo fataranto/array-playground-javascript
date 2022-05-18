@@ -13,6 +13,7 @@
 
  /**
   * Fíjate sin embargo qué valor arroja aplicar indexOf cuando buscamos a "estrella". CONTESTA: ¿Por qué crees que sucede esto?
+  * Sucede porque "Estrella != estrella", por lo tanto indexOf no la encuentre en el array y da como resultado -1
   */
 
   let pezPosicion2 = muchos_peces.indexOf("estrella")
