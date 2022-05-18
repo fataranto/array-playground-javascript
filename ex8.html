@@ -41,7 +41,6 @@
         <p>Ingresos totales: <span id="ingresos"></span></p>
     </div>
     <script>
-
         // querySelectorAll: https://www.w3schools.com/jsref/met_document_queryselectorall.asp
 
         /** Ejemplo. El siguiente código recorre todas las celdas con el nombre del michi y las muestra por consola. Mira el terminal del navegador Web para comprobarlo!  */
@@ -56,16 +55,60 @@
          * Ejercicio 1: Recorre ahora todas las celdas de los ingresos y muestrálos por el terminal, similar al ejemplo.
          */
 
+        let ingresos = document.querySelectorAll(".ingreso");
+
+
+        for (let i = 0; i < ingresos.length; i++) {
+            console.log("Ingresos: ", ingresos[i].textContent);
+            console.log(typeof (ingresos[i].textContent));
+        };
+
         /**
          * Ejercicio 2: Amplia el ejercicio 1, y ahora SUMA el valor de todos los ingresos y pon el resultado en <span id="ingresos">. RECUERDA primero escribir lo que quieres hacer, qué variables vas a necesitar, con lenguaje natural. Después, usa JavaScript
          */
+
+        // 1- inicializo la variable totalIngresos
+        // 2- recorro el array ingresos sumando cada elemento a totalIngresos
+        // 3- Muestro el resultado en <span id="ingresos">
+
+        // 1
+        let totalIngresos = 0;
+        //console.log(typeof(parseInt(totalIngresos)));
+
+        // 2
+
+        function sumaIngresos(totalIngresos, arrayIngresos) {
+
+            for (let i = 0; i < arrayIngresos.length; i++) {
+
+                totalIngresos += parseInt(arrayIngresos[i].textContent);
+                //console.log(typeof(parseInt(totalIngresos)));
+            };
+            console.log(totalIngresos);
+
+            ingresosTxt = document.querySelector("#ingresos");
+            ingresosTxt.textContent = totalIngresos;
+            //return totalIngresos
+        }
+
+        sumaIngresos(totalIngresos, ingresos);
+
+    
+
 
         /**
          * Ejercicio Bonus: Serias capaz de mostrar el nombre de todos los propietarios por el terminal SIN MODIFICAR el HTML?
          */
 
+         let propietarioMichis = document.querySelectorAll("tbody td:nth-child(2)");
+
+        for (let i = 0; i < propietarioMichis.length; i++) {
+            console.log("El nombre del propietario del michi es: ", propietarioMichis[i].textContent);
+        };
+       
 
     </script>
+
 </body>
 
 </html>
