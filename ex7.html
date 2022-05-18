@@ -17,12 +17,18 @@
         let textoSpan = document.querySelector("#lorem").textContent;
         console.log("Texto antes de transformarlo: ", textoSpan);
 
+        
+
         // Tú código aquí: busca en Internet una función JavaScript que te permita transformar el texto en 'textoSpan' en mayúsculas; y asignarlo a la variable 'textoMaysuculas'
 
-        let textoMaysuculas; // Solamente hay que cambiar esta línea
+        let textoMaysuculas = textoSpan.toUpperCase();
+      //  console.log(textoMaysuculas);
+
+       // let textoMaysuculas = textoSpan.toUppercase(); // Solamente hay que cambiar esta línea
+        //console.log(textoSpan);
 
         // No modificar a partir de aquí
-        document.querySelector("#lorem").textContent = textoMaysuculas
+        document.querySelector("#lorem").textContent = textoMaysuculas;
 
     </script>
 </body>
