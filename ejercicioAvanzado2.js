@@ -19,7 +19,7 @@ let resultado = usuarios.some( (usuario) => {
     return usuario.username == 'omiras';
 } )
 
-// Queremos comprobar si todos los usuarios estan suscritos a la newletter
+// Queremos comprobar si todos los usuarios estan suscritos a la newsletter
 
 let todosSuscritos = usuarios.every(usuario => usuario.subscribed)
 //console.log(todosSuscritos)
